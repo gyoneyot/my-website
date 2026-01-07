@@ -1,5 +1,3 @@
-body { outline: 6px solid red !important; }
-
 :root {
   --accent: #46c2a5;
 }
@@ -22,12 +20,12 @@ h1 {
   margin: 0 0 18px;
 }
 
-/* HERO section */
+/* Hero */
 .hero {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
-/* Image: mobile-first (big on phone, capped on desktop) */
+/* Image */
 .featured-image {
   width: min(92vw, 480px);
   height: auto;
@@ -35,12 +33,12 @@ h1 {
   display: block;
   border: 3px solid var(--accent);
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Booking */
 .booking {
-  margin: 18px 0 0;
+  margin-top: 18px;
   font-size: 16px;
 }
 
@@ -54,12 +52,12 @@ h1 {
   text-decoration: underline;
 }
 
-/* Adventure Log section */
+/* Adventure Log */
 .event-history {
   width: min(92vw, 560px);
   margin: 32px auto 0;
   padding: 16px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 12px;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
   text-align: left;
@@ -67,73 +65,44 @@ h1 {
 
 .event-history h2 {
   color: var(--accent);
-  margin: 0 0 10px;
+  margin-bottom: 12px;
   font-size: 20px;
   text-align: center;
 }
 
-/* Current Arc (simple, no bullets) */
+/* Current arc */
 .current-arc {
-  margin: 8px 0 18px;
-  padding: 12px 14px;
-  border: 2px solid rgba(70, 194, 165, 0.22);
-  border-radius: 12px;
-  background: rgba(70, 194, 165, 0.05);
-}
-
-.current-arc h3 {
-  margin: 0 0 6px;
-  color: var(--accent);
-  font-size: 18px;
-}
-
-.current-arc-subtitle {
-  margin: 0;
-  opacity: 0.85;
+  margin-bottom: 18px;
+  padding: 10px 12px;
+  border-left: 4px solid var(--accent);
+  background: rgba(70, 194, 165, 0.06);
   font-size: 14px;
-  line-height: 1.4;
 }
 
-/* --- Collapsible year cards --- */
+/* Year blocks */
 .year-block {
   margin: 14px 0;
-  background: #ffffff;
   border-radius: 12px;
+  background: #fff;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
   overflow: hidden;
 }
 
 .year-block summary {
-  cursor: pointer;
   padding: 12px 14px;
   font-weight: 800;
   color: var(--accent);
+  cursor: pointer;
   list-style: none;
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
 }
 
 .year-block summary::-webkit-details-marker {
   display: none;
 }
 
-/* Year title + subtitle (optional, keep subtle) */
-.year-title {
-  font-weight: 800;
-}
-
-.year-subtitle {
-  margin-left: auto;
-  font-weight: 600;
-  opacity: 0.60;
-  font-size: 13px;
-}
-
-/* Arrow */
 .year-block summary::after {
   content: "▾";
-  margin-left: 10px;
+  float: right;
   opacity: 0.7;
 }
 
@@ -141,11 +110,10 @@ h1 {
   content: "▴";
 }
 
-/* List spacing */
 .year-block ul {
   list-style: disc;
   margin: 8px 0 14px;
-  padding: 0 18px 0 34px;
+  padding-left: 34px;
 }
 
 .year-block li {
@@ -153,33 +121,13 @@ h1 {
   line-height: 1.4;
 }
 
-/* Open animation */
-.year-block[open] ul {
-  animation: reveal 160ms ease-out;
-}
-
-@keyframes reveal {
-  from { opacity: 0; transform: translateY(-4px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-/* Mobile tweaks */
+/* Mobile */
 @media (max-width: 420px) {
-  .container {
-    padding-top: 36px;
-  }
-
   h1 {
     font-size: 24px;
   }
 
-  .year-block summary {
-    flex-wrap: wrap;
-  }
-
-  .year-subtitle {
-    margin-left: 0;
-    width: 100%;
-    font-size: 12px;
+  .container {
+    padding-top: 36px;
   }
 }
