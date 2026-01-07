@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-  color: #4338ca;
+  color: var(--accent);
   margin: 0 0 18px;
 }
 
@@ -26,7 +26,7 @@ h1 {
   height: auto;
   margin: 18px auto 0;
   display: block;
-  border: 3px solid #4338ca;
+  border: 3px solid var(--accent);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
 }
@@ -38,7 +38,7 @@ h1 {
 }
 
 .booking a {
-  color: #4338ca;
+  color: var(--accent);
   font-weight: 700;
   text-decoration: none;
 }
@@ -59,7 +59,7 @@ h1 {
 }
 
 .event-history h2 {
-  color: #4338ca;
+  color: var(--accent);
   margin: 0 0 12px;
   font-size: 20px;
   text-align: center;
@@ -78,7 +78,7 @@ h1 {
   cursor: pointer;
   padding: 12px 14px;
   font-weight: 800;
-  color: #4338ca;
+  color: var(--accent);
   list-style: none; /* removes default marker in Firefox */
 }
 
