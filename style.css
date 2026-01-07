@@ -3,20 +3,76 @@ body {
   background: #eef2ff;
   text-align: center;
   padding-top: 60px;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px 60px;
 }
 
 h1 {
   color: #4338ca;
+  margin: 0 0 18px;
 }
 
 /* Image styling */
-img {
-  max-width: 100%;
+.featured-image {
+  width: 100%;
+  max-width: 420px; /* makes it smaller */
   height: auto;
-  margin-top: 20px;
-  margin-left: 0;    /* Left-aligned */
-  margin-right: auto; /* Optional */
-  border: 3px solid #4338ca;  /* Border around the image */
-  border-radius: 8px;         /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Shadow effect */
+  margin: 20px auto 0;
+  display: block; /* centers via auto margins */
+  border: 3px solid #4338ca;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Booking text */
+.booking {
+  margin: 18px 0 0;
+  font-size: 16px;
+}
+
+.booking a {
+  color: #4338ca;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.booking a:hover {
+  text-decoration: underline;
+}
+
+/* Convention history section */
+.convention-history {
+  margin: 40px auto 0;
+  max-width: 520px;
+  padding: 18px 18px 14px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  text-align: left; /* makes the list easier to read */
+}
+
+.convention-history h2 {
+  color: #4338ca;
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+.convention-history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.convention-history li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eef2ff;
+}
+
+.convention-history li:last-child {
+  border-bottom: none;
 }
